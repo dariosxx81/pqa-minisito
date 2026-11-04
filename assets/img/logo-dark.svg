@@ -1,0 +1,13 @@
+<svg viewBox="0 0 270 76" width="270" height="76" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Centro Analisi P.Q.A. S.r.l.">
+  <title>Centro Analisi P.Q.A. S.r.l.</title>
+  <!-- Goccia + Esagono Molecolare (Variante Fondo Scuro) -->
+  <path d="M34 8C34 8 14 31.5 14 46.5C14 57.5457 22.9543 66.5 34 66.5C45.0457 66.5 54 57.5457 54 46.5C54 31.5 34 8 34 8Z" stroke="#38BDF8" stroke-width="3" fill="#0E7C86" fill-opacity="0.28"/>
+  <polygon points="34,31 44,36.8 44,48.2 34,54 24,48.2 24,36.8" stroke="#FFFFFF" stroke-width="2.4" fill="none"/>
+  <circle cx="34" cy="31" r="2.6" fill="#38BDF8"/>
+  <circle cx="44" cy="48.2" r="2.6" fill="#38BDF8"/>
+  <circle cx="24" cy="48.2" r="2.6" fill="#38BDF8"/>
+  <!-- Logotipo -->
+  <text x="68" y="42" fill="#FFFFFF" font-family="'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" font-weight="800" letter-spacing="1.5">P.Q.A.</text>
+  <line x1="68" y1="50" x2="252" y2="50" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="68" y="63" fill="#38BDF8" font-family="'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">CENTRO ANALISI S.R.L.</text>
+</svg>

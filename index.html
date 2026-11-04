@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Analisi P.Q.A. S.r.l. — Laboratorio Analisi Chimiche, Acque e Ambiente a Siracusa</title>
+  <meta name="description" content="Centro Analisi P.Q.A. S.r.l. a Siracusa (Direzione Dott.ssa Maria Grazia Micieli): laboratorio di analisi chimiche, industriali, merceologiche, controllo acque, ricerca Legionella, sedimenti e biota.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B2545">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Centro Analisi P.Q.A. S.r.l. — Laboratorio Analisi Chimiche e Acque • Siracusa">
+  <meta property="og:description" content="Analisi chimiche, industriali e merceologiche, test di qualità delle acque e ricerca Legionella, monitoraggio sedimenti e biota. Sede in Corso Gelone 82, Siracusa.">
+  <meta property="og:image" content="assets/img/hero-water.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preload" href="assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Literata-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script id="pqa-initial-state" type="application/json">{"csrfToken":"5c1e9d3797a011169003a8483492351122d7364612c27c423a55510c7f0270d1","mapEmbedUrl":"https://maps.google.com/maps?q=Corso%20Gelone%2082%2C%2096100%20Siracusa%20SR\u0026hl=it\u0026z=16\u0026output=embed","documents":[],"heroSlides":[{"image":"assets/img/hero-water.jpg","alt":"Analisi qualità delle acque potabili, termali, industriali e ricerca Legionella a Siracusa","caption":"Qualità delle Acque \u0026 Ricerca Legionella"},{"image":"assets/img/hero-chem.jpg","alt":"Strumentazione analitica di precisione, cromatografia e vetreria tarata","caption":"Analisi Chimiche, Industriali \u0026 Merceologiche"},{"image":"assets/img/hero-env.jpg","alt":"Monitoraggio ambientale di acque marine, sedimenti e biota","caption":"Controllo Ambientale, Sedimenti \u0026 Biota"}]}</script>
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/alpine.min.js"></script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Centro Analisi P.Q.A. S.r.l.","description":"Laboratorio di analisi chimiche, industriali e merceologiche, qualità delle acque, ricerca Legionella, sedimenti e biota.","telephone":"+39 0931 483018","email":"info@centroanalisipqa.it","vatID":"IT01624410898","address":{"@type":"PostalAddress","streetAddress":"Corso Gelone, 82","addressLocality":"96100 Siracusa (SR)","addressCountry":"IT"}}  </script>
+</head>
+<body x-data="pqaSite" @keydown.escape.window="closeAllModals()">
+
+  <a href="#contenuto-principale" class="pqa-skip-link">Salta al contenuto principale</a>
+
+  <!-- Topbar Istituzionale -->
+  <div class="pqa-topbar">
+    <div class="pqa-container pqa-topbar-inner">
+      <div class="pqa-topbar-list">
+        <span class="pqa-topbar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Corso Gelone, 82, 96100 Siracusa (SR)        </span>
+        <span class="pqa-topbar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+390931483018">+39 0931 483018</a>
+        </span>
+        <span class="pqa-topbar-item pqa-hide-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          PEC: <a href="mailto:centroanalisipqasrl@arubapec.it">centroanalisipqasrl@arubapec.it</a>
+        </span>
+      </div>
+            <div class="pqa-topbar-iso">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>UNI CEI EN ISO/IEC 17025 • ACCREDIA Lab N. 00859</span>
+      </div>
+          </div>
+  </div>
+
+  <!-- Header Sticky -->
+  <header class="pqa-header" :class="{ 'is-scrolled': scrolled }">
+    <div class="pqa-container pqa-header-inner">
+      <a href="#intro" class="pqa-brand-link" aria-label="Centro Analisi P.Q.A. S.r.l. — Torna all'inizio">
+        <img src="assets/img/logo-light.svg" alt="Centro Analisi P.Q.A. S.r.l." class="pqa-logo-img" width="200" height="54">
+      </a>
+
+      <nav class="pqa-nav" aria-label="Navigazione principale">
+        <a href="#intro" class="pqa-nav-link" :class="{ 'is-active': activeSection === 'intro' }">Intro</a>
+        <a href="#azienda" class="pqa-nav-link" :class="{ 'is-active': activeSection === 'azienda' }">Azienda &amp; Analisi</a>
+        <a href="#organizzazione" class="pqa-nav-link" :class="{ 'is-active': activeSection === 'organizzazione' }">Organizzazione 231</a>
+        <a href="#contatti" class="pqa-nav-link" :class="{ 'is-active': activeSection === 'contatti' }">Contatti</a>
+      </nav>
+
+      <div class="pqa-header-actions">
+        <a href="tel:+390931483018" class="pqa-btn pqa-btn-sm pqa-btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+39 0931 483018</span>
+        </a>
+        <a href="#contatti" class="pqa-btn pqa-btn-sm pqa-btn-primary pqa-header-cta">Richiedi Analisi</a>
+        <a href="tel:+390931483018" class="pqa-mobile-call" aria-label="Chiama il laboratorio +39 0931 483018">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <button type="button" class="pqa-mobile-toggle" @click="mobileMenuOpen = !mobileMenuOpen" :aria-expanded="mobileMenuOpen.toString()" aria-controls="pqa-mobile-menu" aria-label="Apri menu di navigazione">
+          <svg x-show="!mobileMenuOpen" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg x-show="mobileMenuOpen" x-cloak width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile Animato -->
+    <div id="pqa-mobile-menu" class="pqa-mobile-drawer" x-show="mobileMenuOpen" x-transition.opacity.duration.200ms x-cloak>
+      <nav class="pqa-mobile-nav" aria-label="Menu mobile">
+        <a href="#intro" @click="mobileMenuOpen = false">Intro</a>
+        <a href="#azienda" @click="mobileMenuOpen = false">Azienda &amp; Servizi Analitici</a>
+        <a href="#organizzazione" @click="mobileMenuOpen = false">Organizzazione 231 &amp; Whistleblowing</a>
+        <a href="#contatti" @click="mobileMenuOpen = false">Contatti &amp; Sede</a>
+      </nav>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a href="tel:+390931483018" class="pqa-btn pqa-btn-sm pqa-btn-outline" style="flex:1;">+39 0931 483018</a>
+        <a href="#contatti" @click="mobileMenuOpen = false" class="pqa-btn pqa-btn-sm pqa-btn-primary" style="flex:1;">Scrivici</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenuto-principale">
+
+    <!-- ==================================================================
+         SEZIONE 1: INTRO — Hero Split Full-Width Sfumato (Alpine.js + Ken Burns)
+         ================================================================== -->
+    <section id="intro" class="pqa-hero" x-data="pqaHero" @mouseenter="paused = true" @mouseleave="paused = false">
+      <div class="pqa-hero-grid">
+
+        <div class="pqa-hero-content">
+          <div class="pqa-hero-pill">
+            <span class="pqa-hero-pill-dot" aria-hidden="true"></span>
+            <span>Laboratorio Chimico, Industriale &amp; Merceologico • Siracusa</span>
+          </div>
+
+          <h1 class="pqa-hero-title">
+            Precisione analitica per la tutela delle <em>acque</em>, dell’ambiente e dei processi produttivi.
+          </h1>
+
+          <p class="pqa-hero-desc">
+            Il <strong>Centro Analisi P.Q.A. S.r.l.</strong>, diretto dalla <strong>Dott.ssa Maria Grazia Micieli</strong>, affianca imprese, strutture ricettive, gestori ed enti con determinazioni chimiche, microbiologiche e merceologiche ad elevata affidabilità metrologica.
+          </p>
+
+          <div class="pqa-hero-cta">
+            <a href="#azienda" class="pqa-btn pqa-btn-primary">
+              <span>Esplora le Analisi</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#contatti" class="pqa-btn pqa-btn-outline">Contatta il Laboratorio</a>
+          </div>
+
+          <div class="pqa-hero-metrics">
+            <div>
+              <span class="pqa-metric-val">Acque &amp; Legionella</span>
+              <span class="pqa-metric-lbl">Potabili, termali, piscine e impianti idrici</span>
+            </div>
+            <div>
+              <span class="pqa-metric-val">Chimica &amp; Industria</span>
+              <span class="pqa-metric-lbl">Controlli di processo e caratterizzazioni</span>
+            </div>
+            <div>
+              <span class="pqa-metric-val">Sedimenti &amp; Biota</span>
+              <span class="pqa-metric-lbl">Monitoraggio matrici marine e ambientali</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pqa-hero-media" role="region" aria-label="Galleria fotografica attività di laboratorio">
+          <template x-for="(slide, index) in slides" :key="index">
+            <div class="pqa-hero-slide" :class="{ 'is-active': current === index }" :aria-hidden="(current !== index).toString()">
+              <img :src="slide.image" :alt="slide.alt" :loading="index === 0 ? 'eager' : 'lazy'">
+            </div>
+          </template>
+
+          <div class="pqa-hero-controls">
+            <span class="pqa-hero-caption" x-text="slides[current] ? slides[current].caption : ''">Qualità delle Acque &amp; Ricerca Legionella</span>
+            <div class="pqa-hero-dots" role="tablist" aria-label="Selettore slide">
+              <template x-for="(slide, index) in slides" :key="'dot-' + index">
+                <button
+                  type="button"
+                  class="pqa-hero-dot"
+                  :class="{ 'is-active': current === index }"
+                  @click="goTo(index)"
+                  :aria-label="'Mostra slide ' + (index + 1)"
+                  :aria-selected="(current === index).toString()"
+                  role="tab"
+                ></button>
+              </template>
+            </div>
+            <div style="display:flex; gap:6px;">
+              <button type="button" class="pqa-hero-arrow" @click="prev()" aria-label="Slide precedente">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="pqa-hero-arrow" @click="next()" aria-label="Slide successiva">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SEZIONE 2: AZIENDA, SERVIZI ANALITICI INTERATTIVI & QUALITÀ ISO
+         ================================================================== -->
+    <section id="azienda" class="pqa-section">
+      <div class="pqa-container">
+
+        <div class="pqa-about-split">
+          <div class="pqa-about-text">
+            <span class="pqa-eyebrow">Il Laboratorio • Siracusa</span>
+            <h2 class="pqa-h2">Competenza scientifica, indipendenza tecnica e presidio del territorio</h2>
+            <p>
+              Con sede operativa e legale in <strong>Corso Gelone, 82 a Siracusa</strong>, il <strong>Centro Analisi P.Q.A. S.r.l.</strong> è una struttura specialistica dedicata alle analisi chimiche, industriali, merceologiche e ambientali.
+            </p>
+            <p>
+              Ogni prova analitica viene condotta attraverso metodiche ufficiali validate, strumentazione sottoposta a rigorosi piani di taratura e protocolli di campionamento tracciati, fornendo rapporti di prova chiari, tempestivi e tecnicamente ineccepibili per l’autocontrollo aziendale e gli adempimenti normativi.
+            </p>
+
+            <div class="pqa-director-card">
+              <div class="pqa-director-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>
+              </div>
+              <div>
+                <p class="pqa-director-name">Dott.ssa Maria Grazia Micieli</p>
+                <p class="pqa-director-role">Direzione Tecnica &amp; Coordinamento Scientifico — Centro Analisi P.Q.A. S.r.l.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pqa-about-photo-wrap">
+            <div class="pqa-about-photo">
+              <img src="assets/img/lab-about.jpg" alt="Ambienti analitici e vetreria di precisione del laboratorio Centro Analisi P.Q.A." loading="lazy" width="800" height="600">
+            </div>
+            <div class="pqa-about-floating-badge">
+              <strong>Tracciabilità &amp; Rigore Metodologico</strong>
+              <span>Dal prelievo del campione all’emissione del rapporto di prova secondo standard nazionali e internazionali.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intestazione 4 Aree di Attività -->
+        <div class="pqa-section-header">
+          <span class="pqa-eyebrow">Aree di Attività Analitica</span>
+          <h2 class="pqa-h2">Quattro dipartimenti specialistici al servizio della qualità</h2>
+          <p class="pqa-lead">Seleziona ciascun ambito per consultare le matrici analizzate, le determinazioni principali e richiedere un contatto tecnico dedicato.</p>
+        </div>
+
+        <!-- 4 Card Servizi Interattive in Alpine.js -->
+        <div class="pqa-services-grid">
+
+          <!-- Card 1: Acque & Legionella -->
+          <article class="pqa-service-card" :class="{ 'is-expanded': expandedService === 'acque' }">
+            <div class="pqa-service-top">
+              <div class="pqa-service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </div>
+              <span class="pqa-service-num">AREA 01</span>
+            </div>
+            <h3 class="pqa-service-title">Acque &amp; Ricerca Legionella</h3>
+            <p class="pqa-service-summary">Controlli chimico-fisici e microbiologici completi sulla qualità delle risorse idriche ad uso umano, ricettivo, sanitario, termale e produttivo.</p>
+            <div class="pqa-tag-row">
+              <span class="pqa-tag">Acque Potabili (D.Lgs. 18/2023)</span>
+              <span class="pqa-tag">Ricerca Legionella spp.</span>
+              <span class="pqa-tag">Piscine &amp; Acque Termali</span>
+              <span class="pqa-tag">Acque Industriali</span>
+            </div>
+            <button type="button" class="pqa-accordion-trigger" @click="toggleService('acque')" :aria-expanded="(expandedService === 'acque').toString()">
+              <span x-text="expandedService === 'acque' ? 'Chiudi dettagli analitici' : 'Approfondisci parametri e matrici'">Approfondisci parametri e matrici</span>
+              <svg class="pqa-acc-arrow" :class="{ 'is-open': expandedService === 'acque' }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="pqa-accordion-content" x-show="expandedService === 'acque'" x-transition.opacity.duration.200ms x-cloak>
+              <ul>
+                <li><strong>Acque destinate al consumo umano:</strong> verifica parametri chimici, metalli, sottoprodotti di disinfezione e indicatori microbiologici ex D.Lgs. 18/2023.</li>
+                <li><strong>Prevenzione Legionellosi:</strong> campionamento su reti idriche sanitarie, torri evaporative e impianti aeraulici con determinazione colturale di <em>Legionella spp.</em> secondo Linee Guida Ministeriali.</li>
+                <li><strong>Acque di piscina, termali e reflue:</strong> monitoraggio periodico per strutture turistico-alberghiere, impianti sportivi, stabilimenti termali e scarichi idrici.</li>
+              </ul>
+              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Qualità delle Acque & Ricerca Legionella')">Richiedi analisi acque</button>
+            </div>
+          </article>
+
+          <!-- Card 2: Chimica Industriale -->
+          <article class="pqa-service-card" :class="{ 'is-expanded': expandedService === 'chimica' }">
+            <div class="pqa-service-top">
+              <div class="pqa-service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6"/><path d="M10 3v5.4a2 2 0 0 1-.4 1.2L4.8 16a3 3 0 0 0 2.4 4.8h9.6a3 3 0 0 0 2.4-4.8l-4.8-6.4a2 2 0 0 1-.4-1.2V3"/><path d="M7.5 14.5h9"/></svg>
+              </div>
+              <span class="pqa-service-num">AREA 02</span>
+            </div>
+            <h3 class="pqa-service-title">Chimica Industriale</h3>
+            <p class="pqa-service-summary">Supporto analitico continuativo per insediamenti produttivi, impianti di trattamento, controllo di processo e caratterizzazione chimico-fisica.</p>
+            <div class="pqa-tag-row">
+              <span class="pqa-tag">Controllo Processi</span>
+              <span class="pqa-tag">Matrici Liquide &amp; Solide</span>
+              <span class="pqa-tag">Metalli &amp; Composti Organici</span>
+              <span class="pqa-tag">Acque di Scarico</span>
+            </div>
+            <button type="button" class="pqa-accordion-trigger" @click="toggleService('chimica')" :aria-expanded="(expandedService === 'chimica').toString()">
+              <span x-text="expandedService === 'chimica' ? 'Chiudi dettagli analitici' : 'Approfondisci parametri e matrici'">Approfondisci parametri e matrici</span>
+              <svg class="pqa-acc-arrow" :class="{ 'is-open': expandedService === 'chimica' }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="pqa-accordion-content" x-show="expandedService === 'chimica'" x-transition.opacity.duration.200ms x-cloak>
+              <ul>
+                <li><strong>Caratterizzazione chimico-fisica:</strong> determinazioni spettrofotometriche, cromatografiche e ponderali su fluidi di processo, reagenti e intermedi industriali.</li>
+                <li><strong>Conformità ambientale impianti:</strong> controllo analitico acque reflue industriali e meteoriche ai sensi del D.Lgs. 152/2006.</li>
+                <li><strong>Assistenza tecnica:</strong> interpretazione dei profili analitici per l’ottimizzazione e la sicurezza dei cicli tecnologici.</li>
+              </ul>
+              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Analisi Chimiche & Industriali')">Richiedi supporto chimico</button>
+            </div>
+          </article>
+
+          <!-- Card 3: Merceologia -->
+          <article class="pqa-service-card" :class="{ 'is-expanded': expandedService === 'merceologia' }">
+            <div class="pqa-service-top">
+              <div class="pqa-service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <span class="pqa-service-num">AREA 03</span>
+            </div>
+            <h3 class="pqa-service-title">Analisi Merceologiche</h3>
+            <p class="pqa-service-summary">Verifica qualitativa e quantitativa di materie prime, semilavorati e prodotti finiti per la tutela della filiera commerciale e produttiva.</p>
+            <div class="pqa-tag-row">
+              <span class="pqa-tag">Qualità Materie Prime</span>
+              <span class="pqa-tag">Conformità Capitolati</span>
+              <span class="pqa-tag">Purezza &amp; Composizione</span>
+              <span class="pqa-tag">Sicurezza Prodotto</span>
+            </div>
+            <button type="button" class="pqa-accordion-trigger" @click="toggleService('merceologia')" :aria-expanded="(expandedService === 'merceologia').toString()">
+              <span x-text="expandedService === 'merceologia' ? 'Chiudi dettagli analitici' : 'Approfondisci parametri e matrici'">Approfondisci parametri e matrici</span>
+              <svg class="pqa-acc-arrow" :class="{ 'is-open': expandedService === 'merceologia' }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="pqa-accordion-content" x-show="expandedService === 'merceologia'" x-transition.opacity.duration.200ms x-cloak>
+              <ul>
+                <li><strong>Controllo accettazione forniture:</strong> test chimico-merceologici per attestare la rispondenza ai requisiti contrattuali e alle schede tecniche.</li>
+                <li><strong>Indagini su contaminanti e impurezze:</strong> ricerca mirata di sostanze indesiderate, residui e alterazioni chimico-fisiche.</li>
+                <li><strong>Classificazione merceologica:</strong> prove analitiche documentate per operatori logistici, manifatturieri e agro-industriali.</li>
+              </ul>
+              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Analisi Merceologiche & Controllo Qualità')">Richiedi test merceologico</button>
+            </div>
+          </article>
+
+          <!-- Card 4: Sedimenti & Biota -->
+          <article class="pqa-service-card" :class="{ 'is-expanded': expandedService === 'sedimenti' }">
+            <div class="pqa-service-top">
+              <div class="pqa-service-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <span class="pqa-service-num">AREA 04</span>
+            </div>
+            <h3 class="pqa-service-title">Sedimenti &amp; Biota</h3>
+            <p class="pqa-service-summary">Indagini specialistiche su matrici marine, costiere, portuali e di transizione per piani di monitoraggio ambientale e valutazioni d’impatto.</p>
+            <div class="pqa-tag-row">
+              <span class="pqa-tag">Sedimenti Marini &amp; Costieri</span>
+              <span class="pqa-tag">Analisi sul Biota</span>
+              <span class="pqa-tag">Bioaccumulo</span>
+              <span class="pqa-tag">Monitoraggio Ecosistemi</span>
+            </div>
+            <button type="button" class="pqa-accordion-trigger" @click="toggleService('sedimenti')" :aria-expanded="(expandedService === 'sedimenti').toString()">
+              <span x-text="expandedService === 'sedimenti' ? 'Chiudi dettagli analitici' : 'Approfondisci parametri e matrici'">Approfondisci parametri e matrici</span>
+              <svg class="pqa-acc-arrow" :class="{ 'is-open': expandedService === 'sedimenti' }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="pqa-accordion-content" x-show="expandedService === 'sedimenti'" x-transition.opacity.duration.200ms x-cloak>
+              <ul>
+                <li><strong>Caratterizzazione sedimenti:</strong> determinazione di metalli in tracce, idrocarburi, IPA, PCB, nutrienti e parametri granulometrici/chimico-fisici su fondali marini e fluviali.</li>
+                <li><strong>Indagini sul Biota:</strong> determinazione analitica dei livelli di bioaccumulo di microinquinanti organici e inorganici nei tessuti di organismi bioindicatori.</li>
+                <li><strong>Piani di monitoraggio ambientale:</strong> supporto analitico per infrastrutture marittime, opere costiere e tutela della biodiversità mediterranea.</li>
+              </ul>
+              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Ambiente, Sedimenti & Biota')">Richiedi monitoraggio ambientale</button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Box Qualità UNI CEI EN ISO/IEC 17025 (configurabile da Area Riservata) -->
+                <div class="pqa-quality-banner">
+          <div class="pqa-quality-seal" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-bottom:4px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>ISO 17025</span>
+          </div>
+          <div>
+            <div class="pqa-quality-meta">
+              <span class="pqa-badge-iso">UNI CEI EN ISO/IEC 17025</span>
+                            <span class="pqa-badge-lab">ACCREDIA Lab N. 00859</span>
+                          </div>
+            <h3 class="pqa-quality-title">Sistema di Gestione della Qualità e Competenza Tecnica</h3>
+            <p class="pqa-quality-desc">Il laboratorio opera in conformità ai requisiti della norma internazionale UNI CEI EN ISO/IEC 17025, assicurando riferibilità metrologica, taratura certificata delle apparecchiature, partecipazione regolare a circuiti interlaboratorio (Proficiency Testing) e piena imparzialità del dato analitico.</p>
+          </div>
+          <div>
+            <a href="#contatti" class="pqa-btn pqa-btn-navy">Richiedi Elenco Prove</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SEZIONE 3: ORGANIZZAZIONE AZIENDALE, MODELLO 231 & WHISTLEBLOWING
+         ================================================================== -->
+    <section id="organizzazione" class="pqa-section pqa-section-ice">
+      <div class="pqa-container">
+
+        <div class="pqa-section-header">
+          <span class="pqa-eyebrow">Governance, Etica &amp; Trasparenza</span>
+          <h2 class="pqa-h2">Organizzazione aziendale, Modello 231 e tutela delle segnalazioni</h2>
+          <p class="pqa-lead">
+            Il Centro Analisi P.Q.A. S.r.l. promuove una cultura aziendale fondata su legalità, trasparenza, indipendenza tecnica e responsabilità sociale, mettendo a disposizione di clienti, fornitori e stakeholder la documentazione ufficiale di governance.
+          </p>
+        </div>
+
+        <!-- Card Documenti Ufficiali (Modello 231 + Codice Etico) -->
+                        <div class="pqa-docs-grid">
+                                  <article class="pqa-doc-card">
+              <div>
+                <div class="pqa-doc-header">
+                  <span class="pqa-doc-cat">Governance &amp; Compliance D.Lgs. 231/2001</span>
+                                      <span class="pqa-status-badge pqa-status-pending">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      In aggiornamento
+                    </span>
+                                  </div>
+
+                <h3 class="pqa-doc-title">Modello di Organizzazione, Gestione e Controllo</h3>
+                <p class="pqa-doc-sub">Parte Generale — adottato ai sensi del D.Lgs. 8 giugno 2001, n. 231</p>
+                <p class="pqa-doc-desc">Definisce l’assetto organizzativo, il sistema di presidi preventivi, le procedure decisionali e i flussi informativi verso l’Organismo di Vigilanza adottati dal Centro Analisi P.Q.A. S.r.l.</p>
+              </div>
+
+              <div>
+                <div class="pqa-doc-meta" style="margin-bottom: 16px;">
+                  <span>
+                    <strong>Revisione:</strong>
+                    Rev. 01                  </span>
+                  <span>
+                    <strong>Data approvazione:</strong>
+                    In pubblicazione                  </span>
+                                  </div>
+
+                <div class="pqa-doc-actions">
+                                      <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-outline is-disabled" disabled aria-disabled="true">
+                      Documento in fase di pubblicazione
+                    </button>
+                                  </div>
+              </div>
+            </article>
+                                  <article class="pqa-doc-card">
+              <div>
+                <div class="pqa-doc-header">
+                  <span class="pqa-doc-cat">Deontologia &amp; Integrità Tecnica</span>
+                                      <span class="pqa-status-badge pqa-status-pending">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      In aggiornamento
+                    </span>
+                                  </div>
+
+                <h3 class="pqa-doc-title">Codice Etico Aziendale</h3>
+                <p class="pqa-doc-sub">Carta dei valori, indipendenza di giudizio e principi comportamentali</p>
+                <p class="pqa-doc-desc">Stabilisce gli impegni etici, il rigore scientifico, la riservatezza del dato analitico e le regole di condotta vincolanti per Direzione, personale tecnico, collaboratori e fornitori.</p>
+              </div>
+
+              <div>
+                <div class="pqa-doc-meta" style="margin-bottom: 16px;">
+                  <span>
+                    <strong>Revisione:</strong>
+                    Rev. 01                  </span>
+                  <span>
+                    <strong>Data approvazione:</strong>
+                    In pubblicazione                  </span>
+                                  </div>
+
+                <div class="pqa-doc-actions">
+                                      <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-outline is-disabled" disabled aria-disabled="true">
+                      Documento in fase di pubblicazione
+                    </button>
+                                  </div>
+              </div>
+            </article>
+                  </div>
+        
+        <!-- Box Dedicato Whistleblowing (D.Lgs. 24/2023) -->
+        <div class="pqa-wb-box">
+          <div class="pqa-wb-grid">
+            <div>
+              <span class="pqa-wb-eyebrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Canale Segnalazioni • D.Lgs. 24/2023
+              </span>
+              <h3 class="pqa-wb-title">Segnalazioni Whistleblowing e tutela della riservatezza</h3>
+              <p class="pqa-wb-summary">
+                In conformità al D.Lgs. 10 marzo 2023, n. 24, Centro Analisi P.Q.A. S.r.l. garantisce la massima tutela della riservatezza dell’identità del segnalante, della persona coinvolta e del contenuto della segnalazione, nonché il divieto assoluto di qualsiasi atto di ritorsione o discriminazione.              </p>
+
+              <div class="pqa-wb-pillars">
+                <div class="pqa-wb-pillar">
+                  <strong>Riservatezza Assoluta</strong>
+                  Tutela crittografica dell’identità del segnalante, dei facilitatori e della documentazione allegata.
+                </div>
+                <div class="pqa-wb-pillar">
+                  <strong>Divieto di Ritorsione</strong>
+                  Protezione piena contro qualsiasi misura ritorsiva, diretta o indiretta, ai sensi del D.Lgs. 24/2023.
+                </div>
+                <div class="pqa-wb-pillar">
+                  <strong>Gestione Indipendente</strong>
+                  Presa in carico entro 7 giorni dall’invio e riscontro istruttorio entro 3 mesi dalla ricezione.
+                </div>
+                <div class="pqa-wb-pillar">
+                  <strong>Ambito Oggettivo</strong>
+                  Violazioni del Modello 231, del Codice Etico o di normative nazionali e dell’Unione Europea.
+                </div>
+              </div>
+
+                            <p class="pqa-wb-odv">
+                Organismo di Vigilanza ex D.Lgs. 231/2001: <a href="mailto:odv@centroanalisipqa.it">odv@centroanalisipqa.it</a>
+                <span style="display:block; font-size:0.78rem; opacity:0.8; margin-top:3px;">(Per segnalazioni Whistleblowing ex D.Lgs. 24/2023 utilizzare esclusivamente il canale dedicato riservato qui a fianco.)</span>
+              </p>
+                          </div>
+
+            <div class="pqa-wb-panel">
+              <div>
+                <h4 style="margin:0 0 8px; font-size:1.05rem; color:#FFFFFF;">Accesso al Portale Segnalazioni</h4>
+                <p style="margin:0 0 16px; font-size:0.86rem; color:rgba(255,255,255,0.8);">
+                  Piattaforma telematica esterna separata dai sistemi informativi aziendali, progettata con protocolli di cifratura end-to-end.
+                </p>
+
+                                  <div class="pqa-wb-channel-pending" role="status">
+                    <strong>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      Canale telematico crittografato in attivazione                    </strong>
+                    <p>Il collegamento diretto alla piattaforma crittografata per l’invio delle segnalazioni è in fase di configurazione tecnica e sarà reso operativo su questa sezione.</p>
+                  </div>
+                              </div>
+
+              <!-- Slot PDF Opzionale: Informativa / Procedura Whistleblowing -->
+                            <div class="pqa-wb-doc-slot">
+                <p class="pqa-wb-doc-title">Informativa e Procedura Whistleblowing</p>
+                                  <p class="pqa-wb-doc-meta" style="margin-bottom:0;">
+                    <span class="pqa-status-badge pqa-status-pending" style="background:rgba(254,245,231,0.14); color:#FDE68A;">
+                      Informativa / Procedura PDF in fase di aggiornamento
+                    </span>
+                  </p>
+                              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SEZIONE 4: CONTATTI, MAPPA CLICK-TO-LOAD GDPR & FORM AJAX
+         ================================================================== -->
+    <section id="contatti" class="pqa-section">
+      <div class="pqa-container">
+
+        <div class="pqa-section-header">
+          <span class="pqa-eyebrow">Sede &amp; Recapiti Ufficiali</span>
+          <h2 class="pqa-h2">Contatta la segreteria e il laboratorio di Siracusa</h2>
+          <p class="pqa-lead">Siamo a disposizione per preventivi analitici, modalità di campionamento, ritiro contenitori sterili e consulenza normativa.</p>
+        </div>
+
+        <div class="pqa-contact-grid">
+
+          <!-- Colonna Recapiti + Mappa Click-to-Load -->
+          <div>
+            <div class="pqa-contact-cards">
+
+              <div class="pqa-contact-item">
+                <div class="pqa-contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="pqa-contact-label">Sede Legale e Laboratorio</span>
+                  <div class="pqa-contact-val">Corso Gelone, 82 — 96100 Siracusa (SR)</div>
+                  <span class="pqa-contact-sub">Lun – Ven: 08:30 – 13:00 / 15:00 – 18:00</span>
+                                    <span class="pqa-contact-sub">Accettazione campioni: Lun – Gio 08:30 – 12:30 (o su appuntamento tecnico)</span>
+                                  </div>
+              </div>
+
+              <div class="pqa-contact-item">
+                <div class="pqa-contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="pqa-contact-label">Telefono Segreteria</span>
+                  <div class="pqa-contact-val"><a href="tel:+390931483018">+39 0931 483018</a></div>
+                  <span class="pqa-contact-sub">Assistenza diretta per urgenze analitiche e ritiro referti</span>
+                </div>
+              </div>
+
+              <div class="pqa-contact-item">
+                <div class="pqa-contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <span class="pqa-contact-label">Posta Elettronica &amp; PEC</span>
+                  <div class="pqa-contact-val"><a href="mailto:info@centroanalisipqa.it">info@centroanalisipqa.it</a></div>
+                                    <span class="pqa-contact-sub">Laboratorio: <a href="mailto:laboratorio@centroanalisipqa.it">laboratorio@centroanalisipqa.it</a></span>
+                                    <span class="pqa-contact-sub">PEC: <a href="mailto:centroanalisipqasrl@arubapec.it">centroanalisipqasrl@arubapec.it</a></span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Mappa Interattiva Click-to-Load (Zero Cookie di Terze Parti al caricamento) -->
+            <div class="pqa-map-shell">
+              <div class="pqa-map-placeholder" x-show="!mapUnlocked">
+                <div class="pqa-map-pin" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3>Corso Gelone, 82 — 96100 Siracusa (SR)</h3>
+                <p>
+                  Per tutelare la tua privacy (GDPR) ed evitare l’installazione automatica di cookie di terze parti, la mappa interattiva viene caricata solo su tua richiesta.
+                </p>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+                  <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="unlockMap()">
+                    Attiva Mappa Interattiva
+                  </button>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Gelone+82%2C+96100+Siracusa+SR" target="_blank" rel="noopener noreferrer" class="pqa-btn pqa-btn-sm pqa-btn-outline">
+                    Apri nel Navigatore
+                  </a>
+                </div>
+              </div>
+
+              <template x-if="mapUnlocked">
+                <div class="pqa-map-frame-wrap">
+                  <iframe
+                    :src="mapEmbedUrl"
+                    title="Mappa sede Centro Analisi P.Q.A. S.r.l. — Corso Gelone 82, Siracusa"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <button type="button" class="pqa-map-unload" @click="lockMap()">Chiudi mappa</button>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <!-- Colonna Form Richiesta Informazioni AJAX -->
+          <div class="pqa-form-card">
+            <h3 class="pqa-form-title">Richiedi informazioni o un preventivo</h3>
+            <p class="pqa-form-subtitle">Compila il modulo per essere ricontattato dai tecnici del laboratorio all’indirizzo <strong>info@centroanalisipqa.it</strong>.</p>
+
+            <div aria-live="polite">
+              <div class="pqa-alert pqa-alert-success" x-show="formSuccess !== ''" x-cloak x-text="formSuccess"></div>
+              <div class="pqa-alert pqa-alert-error" x-show="formError !== ''" x-cloak x-text="formError"></div>
+            </div>
+
+            <form @submit.prevent="submitContact()" novalidate>
+              <!-- Honeypot anti-spam invisibile -->
+              <div class="pqa-hp-wrap" aria-hidden="true">
+                <label for="company_website">Sito web aziendale (non compilare)</label>
+                <input type="text" id="company_website" name="company_website" x-model="form.company_website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="pqa-field">
+                <label class="pqa-label" for="contact-name">Nome e Cognome / Ragione Sociale *</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  class="pqa-input"
+                  :class="{ 'has-error': fieldErrors.name }"
+                  x-model="form.name"
+                  placeholder="Es. Mario Rossi / Azienda Idrica S.r.l."
+                  required
+                  maxlength="120"
+                  autocomplete="name"
+                >
+                <span class="pqa-field-error" x-show="fieldErrors.name" x-cloak x-text="fieldErrors.name"></span>
+              </div>
+
+              <div class="pqa-form-row">
+                <div class="pqa-field">
+                  <label class="pqa-label" for="contact-email">Indirizzo Email *</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    class="pqa-input"
+                    :class="{ 'has-error': fieldErrors.email }"
+                    x-model="form.email"
+                    placeholder="nome@azienda.it"
+                    required
+                    maxlength="150"
+                    autocomplete="email"
+                  >
+                  <span class="pqa-field-error" x-show="fieldErrors.email" x-cloak x-text="fieldErrors.email"></span>
+                </div>
+
+                <div class="pqa-field">
+                  <label class="pqa-label" for="contact-phone">Telefono (opzionale)</label>
+                  <input
+                    type="tel"
+                    id="contact-phone"
+                    class="pqa-input"
+                    :class="{ 'has-error': fieldErrors.phone }"
+                    x-model="form.phone"
+                    placeholder="+39 ..."
+                    maxlength="28"
+                    autocomplete="tel"
+                  >
+                  <span class="pqa-field-error" x-show="fieldErrors.phone" x-cloak x-text="fieldErrors.phone"></span>
+                </div>
+              </div>
+
+              <div class="pqa-field">
+                <label class="pqa-label" for="contact-subject">Ambito della richiesta *</label>
+                <select id="contact-subject" class="pqa-select" x-model="form.subject">
+                  <option value="Qualità delle Acque & Ricerca Legionella">Qualità delle Acque &amp; Ricerca Legionella</option>
+                  <option value="Analisi Chimiche & Industriali">Analisi Chimiche &amp; Industriali</option>
+                  <option value="Analisi Merceologiche & Controllo Qualità">Analisi Merceologiche &amp; Controllo Qualità</option>
+                  <option value="Ambiente, Sedimenti & Biota">Ambiente, Sedimenti &amp; Biota</option>
+                  <option value="Preventivo Generale / Campionamento">Preventivo Generale / Modalità di Campionamento</option>
+                </select>
+              </div>
+
+              <div class="pqa-field">
+                <label class="pqa-label" for="contact-message">Dettagli tecnici della richiesta *</label>
+                <textarea
+                  id="contact-message"
+                  class="pqa-textarea"
+                  :class="{ 'has-error': fieldErrors.message }"
+                  x-model="form.message"
+                  placeholder="Indica la tipologia di matrice da analizzare, eventuali riferimenti normativi o il numero di campioni..."
+                  required
+                  maxlength="3000"
+                ></textarea>
+                <span class="pqa-field-error" x-show="fieldErrors.message" x-cloak x-text="fieldErrors.message"></span>
+              </div>
+
+              <div class="pqa-field">
+                <label class="pqa-checkbox-label">
+                  <input type="checkbox" x-model="form.privacy_consent" required>
+                  <span>
+                    Dichiaro di aver letto l’<button type="button" class="pqa-link-btn" @click="openLegal('privacy')">Informativa Privacy (Art. 13 GDPR)</button> e acconsento al trattamento dei dati forniti esclusivamente per la gestione della presente richiesta. *
+                  </span>
+                </label>
+                <span class="pqa-field-error" x-show="fieldErrors.privacy_consent" x-cloak x-text="fieldErrors.privacy_consent"></span>
+              </div>
+
+              <button type="submit" class="pqa-btn pqa-btn-primary" style="width:100%;" :disabled="formLoading">
+                <span x-show="!formLoading">Invia Richiesta al Laboratorio</span>
+                <span x-show="formLoading" x-cloak>Invio in corso...</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER LEGALE
+       ==================================================================== -->
+  <footer class="pqa-footer">
+    <div class="pqa-container">
+      <div class="pqa-footer-grid">
+        <div>
+          <img src="assets/img/logo-dark.svg" alt="Centro Analisi P.Q.A. S.r.l." class="pqa-footer-logo" width="190" height="52">
+          <p style="margin:0 0 12px; max-width:420px;">
+            Laboratorio di analisi chimiche, industriali e merceologiche, controllo acque potabili e di piscina, ricerca <em>Legionella</em>, monitoraggio sedimenti e biota.
+          </p>
+          <p style="margin:0; font-size:0.84rem; color:rgba(255,255,255,0.68);">
+            Direzione Tecnica: <strong>Dott.ssa Maria Grazia Micieli</strong>
+          </p>
+        </div>
+
+        <div>
+          <h4>Sezioni</h4>
+          <ul class="pqa-footer-links">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#azienda">Azienda &amp; Analisi</a></li>
+            <li><a href="#organizzazione">Organizzazione 231 &amp; Whistleblowing</a></li>
+            <li><a href="#contatti">Contatti &amp; Mappa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Note Legali &amp; Privacy</h4>
+          <ul class="pqa-footer-links">
+            <li><button type="button" @click="openLegal('privacy')">Informativa Privacy (GDPR)</button></li>
+            <li><button type="button" @click="openLegal('cookie')">Informativa Cookie Tecnici</button></li>
+            <li><a href="#organizzazione">Modello Organizzativo D.Lgs. 231/2001</a></li>
+            <li><a href="#organizzazione">Segnalazioni D.Lgs. 24/2023</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pqa-footer-bottom">
+        <div>
+          <strong>Centro Analisi P.Q.A. S.r.l.</strong> — Sede Legale e Operativa: Corso Gelone, 82, 96100 Siracusa (SR)          • P.IVA e C.F. <strong>01624410898</strong>
+          • PEC: <a href="mailto:centroanalisipqasrl@arubapec.it" style="color:inherit; text-decoration:underline;">centroanalisipqasrl@arubapec.it</a>
+        </div>
+        <div>
+          <a href="admin.php" class="pqa-admin-discrete">Area Riservata</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       MODALE ANTEPRIMA DOCUMENTO PDF (Alpine.js)
+       ==================================================================== -->
+  <div
+    class="pqa-modal-backdrop"
+    x-show="pdfModal.open"
+    x-transition.opacity.duration.200ms
+    x-cloak
+    @click.self="closePdfPreview()"
+    role="dialog"
+    aria-modal="true"
+    :aria-label="'Anteprima documento: ' + pdfModal.title"
+  >
+    <div class="pqa-modal-dialog pqa-modal-pdf">
+      <div class="pqa-modal-header">
+        <div style="min-width:0;">
+          <h3 class="pqa-modal-title" x-text="pdfModal.title">Documento</h3>
+          <span style="font-size:0.79rem; color:var(--pqa-muted);" x-text="pdfModal.revision + (pdfModal.size ? ' • PDF ' + pdfModal.size : '')"></span>
+        </div>
+        <div class="pqa-modal-actions">
+          <a :href="pdfModal.viewUrl" target="_blank" rel="noopener" class="pqa-btn pqa-btn-sm pqa-btn-outline">Apri a schermo intero</a>
+          <a :href="pdfModal.downloadUrl" class="pqa-btn pqa-btn-sm pqa-btn-primary" download>Scarica PDF</a>
+          <button type="button" class="pqa-modal-close" @click="closePdfPreview()" aria-label="Chiudi anteprima">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="pqa-pdf-mobile-hint">
+        <span>Su smartphone il lettore integrato può mostrare solo la prima pagina:</span>
+        <a :href="pdfModal.viewUrl" target="_blank" rel="noopener">apri il PDF nel visualizzatore nativo</a>.
+      </div>
+      <template x-if="pdfModal.open && pdfModal.viewUrl">
+        <iframe class="pqa-pdf-frame" :src="pdfModal.viewUrl" :title="pdfModal.title"></iframe>
+      </template>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODALE INFORMATIVA PRIVACY & COOKIE TECNICI (Alpine.js)
+       ==================================================================== -->
+  <div
+    class="pqa-modal-backdrop"
+    x-show="legalModal !== null"
+    x-transition.opacity.duration.200ms
+    x-cloak
+    @click.self="legalModal = null"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="pqa-legal-modal-title"
+  >
+    <div class="pqa-modal-dialog">
+      <div class="pqa-modal-header">
+        <h3 id="pqa-legal-modal-title" class="pqa-modal-title" x-text="legalModal === 'cookie' ? 'Informativa Cookie Tecnici' : 'Informativa sul Trattamento dei Dati Personali (Art. 13 GDPR)'">Informativa</h3>
+        <button type="button" class="pqa-modal-close" @click="legalModal = null" aria-label="Chiudi finestra">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Testo Privacy GDPR -->
+      <div class="pqa-modal-body" x-show="legalModal === 'privacy'">
+        <h4>1. Titolare del Trattamento</h4>
+        <p>
+          Il Titolare del trattamento dei dati personali è <strong>Centro Analisi P.Q.A. S.r.l.</strong>, con sede legale e operativa in Corso Gelone, 82, 96100 Siracusa (SR), P.IVA e C.F. 01624410898, contattabile all’indirizzo email <a href="mailto:info@centroanalisipqa.it">info@centroanalisipqa.it</a> o via PEC a <a href="mailto:centroanalisipqasrl@arubapec.it">centroanalisipqasrl@arubapec.it</a>.
+        </p>
+
+        <h4>2. Tipologia di dati trattati e finalità</h4>
+        <p>
+          Attraverso il presente sito web vengono raccolti esclusivamente: (a) dati tecnici di navigazione strettamente necessari all’erogazione sicura del servizio; (b) dati identificativi e di contatto (nome, email, eventuale recapito telefonico e contenuto della richiesta) conferiti volontariamente dall’utente mediante il modulo di richiesta informazioni, trattati al solo fine di dare riscontro a richieste tecniche, preventivi o informazioni sui servizi di laboratorio.
+        </p>
+
+        <h4>3. Base giuridica del trattamento</h4>
+        <p>
+          Il trattamento si fonda sull’esecuzione di misure precontrattuali adottate su richiesta dell’interessato (art. 6, par. 1, lett. b del Regolamento UE 2016/679 — GDPR) e sul legittimo interesse del Titolare alla sicurezza informatica del sito (art. 6, par. 1, lett. f GDPR).
+        </p>
+
+        <h4>4. Modalità del trattamento e conservazione</h4>
+        <p>
+          I dati sono trattati da personale espressamente autorizzato mediante strumenti informatici protetti, senza alcun processo decisionale automatizzato né profilazione commerciale, e sono conservati per il tempo strettamente necessario a evadere la richiesta e adempiere ad eventuali obblighi di legge.
+        </p>
+
+        <h4>5. Diritti dell’Interessato</h4>
+        <p>
+          Ai sensi degli artt. 15–22 del GDPR, l’interessato può esercitare in qualsiasi momento i diritti di accesso, rettifica, cancellazione, limitazione o opposizione scrivendo a <a href="mailto:info@centroanalisipqa.it">info@centroanalisipqa.it</a> o alla PEC societaria, fatto salvo il diritto di proporre reclamo all’Autorità Garante per la protezione dei dati personali.
+        </p>
+      </div>
+
+      <!-- Testo Cookie Policy GDPR-Safe -->
+      <div class="pqa-modal-body" x-show="legalModal === 'cookie'">
+        <h4>Zero Cookie di Profilazione</h4>
+        <p>
+          Il sito web di <strong>Centro Analisi P.Q.A. S.r.l.</strong> è stato progettato secondo il principio <em>Privacy by Design</em>: tutti i caratteri tipografici, i fogli di stile e le librerie interattive sono ospitati localmente sul server del sito, senza connessioni automatiche verso CDN esterne o strumenti di tracciamento pubblicitario.
+        </p>
+
+        <h4>Cookie Tecnici di Sessione</h4>
+        <p>
+          Viene impiegato unicamente un cookie tecnico di sessione strettamente necessario (<code>pqa_sess</code>, <code>HttpOnly</code>) per la protezione anti-falsificazione (CSRF) del modulo contatti e dell’area riservata, esente da consenso preventivo ai sensi delle Linee Guida del Garante Privacy del 10 giugno 2021.
+        </p>
+
+        <h4>Mappa Interattiva con Sblocco Volontario (Click-to-Load)</h4>
+        <p>
+          Nella sezione Contatti, la mappa geografica di terze parti è bloccata per impostazione predefinita e nessun dato viene trasmesso al fornitore cartografico finché l’utente non seleziona volontariamente il pulsante <em>“Attiva Mappa Interattiva”</em>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
