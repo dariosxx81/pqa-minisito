@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 declare(strict_types=1);
 
 require_once __DIR__ . '/includes/bootstrap.php';
@@ -19,7 +19,7 @@ foreach ($documents as $key => $doc) {
     if (!empty($doc['visible']) && !empty($doc['is_available'])) {
         $jsDocs[$key] = [
             'title' => (string) $doc['title'],
-            'revision' => trim((string) $doc['revision'] . ($doc['approved_date_human'] !== '' ? ' • Approvato il ' . $doc['approved_date_human'] : '')),
+            'revision' => trim((string) $doc['revision'] . ($doc['approved_date_human'] !== '' ? ' â€¢ Approvato il ' . $doc['approved_date_human'] : '')),
             'size' => (string) $doc['size_human'],
             'viewUrl' => (string) $doc['view_url'],
             'downloadUrl' => (string) $doc['download_url'],
@@ -34,8 +34,8 @@ $initialState = [
     'heroSlides' => [
         [
             'image' => 'assets/img/hero-water.jpg',
-            'alt' => 'Analisi qualità delle acque potabili, termali, industriali e ricerca Legionella a Siracusa',
-            'caption' => 'Qualità delle Acque & Ricerca Legionella',
+            'alt' => 'Analisi qualitÃ  delle acque potabili, termali, industriali e ricerca Legionella a Siracusa',
+            'caption' => 'QualitÃ  delle Acque & Ricerca Legionella',
         ],
         [
             'image' => 'assets/img/hero-chem.jpg',
@@ -58,22 +58,22 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= pqa_e($config['company_name']) ?> — Laboratorio Analisi Chimiche, Acque e Ambiente a Siracusa</title>
+  <title><?= pqa_e($config['company_name']) ?> â€” Laboratorio Analisi Chimiche, Acque e Ambiente a Siracusa</title>
   <meta name="description" content="Centro Analisi P.Q.A. S.r.l. a Siracusa (Direzione Dott.ssa Maria Grazia Micieli): laboratorio di analisi chimiche, industriali, merceologiche, controllo acque, ricerca Legionella, sedimenti e biota.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#172D21">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="<?= pqa_e($config['company_name']) ?> — Laboratorio Analisi Chimiche e Acque • Siracusa">
-  <meta property="og:description" content="Analisi chimiche, industriali e merceologiche, test di qualità delle acque e ricerca Legionella, monitoraggio sedimenti e biota. Sede in Corso Gelone 82, Siracusa.">
+  <meta property="og:title" content="<?= pqa_e($config['company_name']) ?> â€” Laboratorio Analisi Chimiche e Acque â€¢ Siracusa">
+  <meta property="og:description" content="Analisi chimiche, industriali e merceologiche, test di qualitÃ  delle acque e ricerca Legionella, monitoraggio sedimenti e biota. Sede in Corso Gelone 82, Siracusa.">
   <meta property="og:image" content="assets/img/hero-water.jpg">
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preload" href="assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Literata-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/fonts.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
 
   <script id="pqa-initial-state" type="application/json"><?= json_encode($initialState, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
   <script defer src="assets/js/app.js"></script>
@@ -84,7 +84,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
       '@context' => 'https://schema.org',
       '@type' => 'LocalBusiness',
       'name' => $config['company_name'],
-      'description' => 'Laboratorio di analisi chimiche, industriali e merceologiche, qualità delle acque, ricerca Legionella, sedimenti e biota.',
+      'description' => 'Laboratorio di analisi chimiche, industriali e merceologiche, qualitÃ  delle acque, ricerca Legionella, sedimenti e biota.',
       'telephone' => $config['phone_display'],
       'email' => $config['email_info'],
       'vatID' => 'IT' . $config['vat_number'],
@@ -121,7 +121,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
       <?php if (!empty($acc['enabled'])): ?>
       <div class="pqa-topbar-iso">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-        <span><?= pqa_e($acc['standard'] ?? 'UNI CEI EN ISO/IEC 17025') ?><?= !empty($acc['code']) ? ' • ' . pqa_e((string) ($acc['body'] ?? '')) . ' ' . pqa_e((string) $acc['code']) : '' ?></span>
+        <span><?= pqa_e($acc['standard'] ?? 'UNI CEI EN ISO/IEC 17025') ?><?= !empty($acc['code']) ? ' â€¢ ' . pqa_e((string) ($acc['body'] ?? '')) . ' ' . pqa_e((string) $acc['code']) : '' ?></span>
       </div>
       <?php endif; ?>
     </div>
@@ -130,7 +130,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
   <!-- Header Sticky -->
   <header class="pqa-header" :class="{ 'is-scrolled': scrolled }">
     <div class="pqa-container pqa-header-inner">
-      <a href="#intro" class="pqa-brand-link" aria-label="<?= pqa_e($config['company_name']) ?> — Torna all'inizio">
+      <a href="#intro" class="pqa-brand-link" aria-label="<?= pqa_e($config['company_name']) ?> â€” Torna all'inizio">
         <img src="<?= pqa_e($config['branding']['logo_light']) ?>" alt="<?= pqa_e($config['company_name']) ?>" class="pqa-logo-img" width="178" height="58">
       </a>
 
@@ -175,7 +175,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
   <main id="contenuto-principale">
 
     <!-- ==================================================================
-         SEZIONE 1: INTRO — Hero Split Full-Width Sfumato (Alpine.js + Ken Burns)
+         SEZIONE 1: INTRO â€” Hero Split Full-Width Sfumato (Alpine.js + Ken Burns)
          ================================================================== -->
     <section id="intro" class="pqa-hero" x-data="pqaHero" @mouseenter="paused = true" @mouseleave="paused = false">
       <div class="pqa-hero-grid">
@@ -183,15 +183,15 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
         <div class="pqa-hero-content">
           <div class="pqa-hero-pill">
             <span class="pqa-hero-pill-dot" aria-hidden="true"></span>
-            <span>Laboratorio Chimico, Industriale &amp; Merceologico • Siracusa</span>
+            <span>Laboratorio Chimico, Industriale &amp; Merceologico â€¢ Siracusa</span>
           </div>
 
           <h1 class="pqa-hero-title">
-            Precisione analitica per la tutela delle <em>acque</em>, dell’ambiente e dei processi produttivi.
+            Precisione analitica per la tutela delle <em>acque</em>, dellâ€™ambiente e dei processi produttivi.
           </h1>
 
           <p class="pqa-hero-desc">
-            Il <strong><?= pqa_e($config['company_name']) ?></strong>, diretto dalla <strong><?= pqa_e($config['director_name']) ?></strong>, affianca imprese, strutture ricettive, gestori ed enti con determinazioni chimiche, microbiologiche e merceologiche ad elevata affidabilità metrologica.
+            Il <strong><?= pqa_e($config['company_name']) ?></strong>, diretto dalla <strong><?= pqa_e($config['director_name']) ?></strong>, affianca imprese, strutture ricettive, gestori ed enti con determinazioni chimiche, microbiologiche e merceologiche ad elevata affidabilitÃ  metrologica.
           </p>
 
           <div class="pqa-hero-cta">
@@ -218,7 +218,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
           </div>
         </div>
 
-        <div class="pqa-hero-media" role="region" aria-label="Galleria fotografica attività di laboratorio">
+        <div class="pqa-hero-media" role="region" aria-label="Galleria fotografica attivitÃ  di laboratorio">
           <template x-for="(slide, index) in slides" :key="index">
             <div class="pqa-hero-slide" :class="{ 'is-active': current === index }" :aria-hidden="(current !== index).toString()">
               <img :src="slide.image" :alt="slide.alt" :loading="index === 0 ? 'eager' : 'lazy'">
@@ -226,7 +226,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
           </template>
 
           <div class="pqa-hero-controls">
-            <span class="pqa-hero-caption" x-text="slides[current] ? slides[current].caption : ''">Qualità delle Acque &amp; Ricerca Legionella</span>
+            <span class="pqa-hero-caption" x-text="slides[current] ? slides[current].caption : ''">QualitÃ  delle Acque &amp; Ricerca Legionella</span>
             <div class="pqa-hero-dots" role="tablist" aria-label="Selettore slide">
               <template x-for="(slide, index) in slides" :key="'dot-' + index">
                 <button
@@ -255,20 +255,20 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
     </section>
 
     <!-- ==================================================================
-         SEZIONE 2: AZIENDA, SERVIZI ANALITICI INTERATTIVI & QUALITÀ ISO
+         SEZIONE 2: AZIENDA, SERVIZI ANALITICI INTERATTIVI & QUALITÃ€ ISO
          ================================================================== -->
     <section id="azienda" class="pqa-section">
       <div class="pqa-container">
 
         <div class="pqa-about-split">
           <div class="pqa-about-text">
-            <span class="pqa-eyebrow">Il Laboratorio • Siracusa</span>
+            <span class="pqa-eyebrow">Il Laboratorio â€¢ Siracusa</span>
             <h2 class="pqa-h2">Competenza scientifica, indipendenza tecnica e presidio del territorio</h2>
             <p>
-              Con sede operativa e legale in <strong><?= pqa_e($config['address_street']) ?> a Siracusa</strong>, il <strong><?= pqa_e($config['company_name']) ?></strong> è una struttura specialistica dedicata alle analisi chimiche, industriali, merceologiche e ambientali.
+              Con sede operativa e legale in <strong><?= pqa_e($config['address_street']) ?> a Siracusa</strong>, il <strong><?= pqa_e($config['company_name']) ?></strong> Ã¨ una struttura specialistica dedicata alle analisi chimiche, industriali, merceologiche e ambientali.
             </p>
             <p>
-              Ogni prova analitica viene condotta attraverso metodiche ufficiali validate, strumentazione sottoposta a rigorosi piani di taratura e protocolli di campionamento tracciati, fornendo rapporti di prova chiari, tempestivi e tecnicamente ineccepibili per l’autocontrollo aziendale e gli adempimenti normativi.
+              Ogni prova analitica viene condotta attraverso metodiche ufficiali validate, strumentazione sottoposta a rigorosi piani di taratura e protocolli di campionamento tracciati, fornendo rapporti di prova chiari, tempestivi e tecnicamente ineccepibili per lâ€™autocontrollo aziendale e gli adempimenti normativi.
             </p>
 
             <div class="pqa-director-card">
@@ -277,7 +277,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               </div>
               <div>
                 <p class="pqa-director-name"><?= pqa_e($config['director_name']) ?></p>
-                <p class="pqa-director-role">Direzione Tecnica &amp; Coordinamento Scientifico — <?= pqa_e($config['company_name']) ?></p>
+                <p class="pqa-director-role">Direzione Tecnica &amp; Coordinamento Scientifico â€” <?= pqa_e($config['company_name']) ?></p>
               </div>
             </div>
           </div>
@@ -287,16 +287,16 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               <img src="assets/img/lab-about.jpg" alt="Ambienti analitici e vetreria di precisione del laboratorio Centro Analisi P.Q.A." loading="lazy" width="800" height="600">
             </div>
             <div class="pqa-about-floating-badge">
-              <strong>Tracciabilità &amp; Rigore Metodologico</strong>
-              <span>Dal prelievo del campione all’emissione del rapporto di prova secondo standard nazionali e internazionali.</span>
+              <strong>TracciabilitÃ  &amp; Rigore Metodologico</strong>
+              <span>Dal prelievo del campione allâ€™emissione del rapporto di prova secondo standard nazionali e internazionali.</span>
             </div>
           </div>
         </div>
 
-        <!-- Intestazione 4 Aree di Attività -->
+        <!-- Intestazione 4 Aree di AttivitÃ  -->
         <div class="pqa-section-header">
-          <span class="pqa-eyebrow">Aree di Attività Analitica</span>
-          <h2 class="pqa-h2">Quattro dipartimenti specialistici al servizio della qualità</h2>
+          <span class="pqa-eyebrow">Aree di AttivitÃ  Analitica</span>
+          <h2 class="pqa-h2">Quattro dipartimenti specialistici al servizio della qualitÃ </h2>
           <p class="pqa-lead">Seleziona ciascun ambito per consultare le matrici analizzate, le determinazioni principali e richiedere un contatto tecnico dedicato.</p>
         </div>
 
@@ -312,7 +312,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               <span class="pqa-service-num">AREA 01</span>
             </div>
             <h3 class="pqa-service-title">Acque &amp; Ricerca Legionella</h3>
-            <p class="pqa-service-summary">Controlli chimico-fisici e microbiologici completi sulla qualità delle risorse idriche ad uso umano, ricettivo, sanitario, termale e produttivo.</p>
+            <p class="pqa-service-summary">Controlli chimico-fisici e microbiologici completi sulla qualitÃ  delle risorse idriche ad uso umano, ricettivo, sanitario, termale e produttivo.</p>
             <div class="pqa-tag-row">
               <span class="pqa-tag">Acque Potabili (D.Lgs. 18/2023)</span>
               <span class="pqa-tag">Ricerca Legionella spp.</span>
@@ -329,7 +329,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 <li><strong>Prevenzione Legionellosi:</strong> campionamento su reti idriche sanitarie, torri evaporative e impianti aeraulici con determinazione colturale di <em>Legionella spp.</em> secondo Linee Guida Ministeriali.</li>
                 <li><strong>Acque di piscina, termali e reflue:</strong> monitoraggio periodico per strutture turistico-alberghiere, impianti sportivi, stabilimenti termali e scarichi idrici.</li>
               </ul>
-              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Qualità delle Acque & Ricerca Legionella')">Richiedi analisi acque</button>
+              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('QualitÃ  delle Acque & Ricerca Legionella')">Richiedi analisi acque</button>
             </div>
           </article>
 
@@ -356,8 +356,8 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
             <div class="pqa-accordion-content" x-show="expandedService === 'chimica'" x-transition.opacity.duration.200ms x-cloak>
               <ul>
                 <li><strong>Caratterizzazione chimico-fisica:</strong> determinazioni spettrofotometriche, cromatografiche e ponderali su fluidi di processo, reagenti e intermedi industriali.</li>
-                <li><strong>Conformità ambientale impianti:</strong> controllo analitico acque reflue industriali e meteoriche ai sensi del D.Lgs. 152/2006.</li>
-                <li><strong>Assistenza tecnica:</strong> interpretazione dei profili analitici per l’ottimizzazione e la sicurezza dei cicli tecnologici.</li>
+                <li><strong>ConformitÃ  ambientale impianti:</strong> controllo analitico acque reflue industriali e meteoriche ai sensi del D.Lgs. 152/2006.</li>
+                <li><strong>Assistenza tecnica:</strong> interpretazione dei profili analitici per lâ€™ottimizzazione e la sicurezza dei cicli tecnologici.</li>
               </ul>
               <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Analisi Chimiche & Industriali')">Richiedi supporto chimico</button>
             </div>
@@ -374,8 +374,8 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
             <h3 class="pqa-service-title">Analisi Merceologiche</h3>
             <p class="pqa-service-summary">Verifica qualitativa e quantitativa di materie prime, semilavorati e prodotti finiti per la tutela della filiera commerciale e produttiva.</p>
             <div class="pqa-tag-row">
-              <span class="pqa-tag">Qualità Materie Prime</span>
-              <span class="pqa-tag">Conformità Capitolati</span>
+              <span class="pqa-tag">QualitÃ  Materie Prime</span>
+              <span class="pqa-tag">ConformitÃ  Capitolati</span>
               <span class="pqa-tag">Purezza &amp; Composizione</span>
               <span class="pqa-tag">Sicurezza Prodotto</span>
             </div>
@@ -389,7 +389,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 <li><strong>Indagini su contaminanti e impurezze:</strong> ricerca mirata di sostanze indesiderate, residui e alterazioni chimico-fisiche.</li>
                 <li><strong>Classificazione merceologica:</strong> prove analitiche documentate per operatori logistici, manifatturieri e agro-industriali.</li>
               </ul>
-              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Analisi Merceologiche & Controllo Qualità')">Richiedi test merceologico</button>
+              <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Analisi Merceologiche & Controllo QualitÃ ')">Richiedi test merceologico</button>
             </div>
           </article>
 
@@ -402,7 +402,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               <span class="pqa-service-num">AREA 04</span>
             </div>
             <h3 class="pqa-service-title">Sedimenti &amp; Biota</h3>
-            <p class="pqa-service-summary">Indagini specialistiche su matrici marine, costiere, portuali e di transizione per piani di monitoraggio ambientale e valutazioni d’impatto.</p>
+            <p class="pqa-service-summary">Indagini specialistiche su matrici marine, costiere, portuali e di transizione per piani di monitoraggio ambientale e valutazioni dâ€™impatto.</p>
             <div class="pqa-tag-row">
               <span class="pqa-tag">Sedimenti Marini &amp; Costieri</span>
               <span class="pqa-tag">Analisi sul Biota</span>
@@ -417,7 +417,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               <ul>
                 <li><strong>Caratterizzazione sedimenti:</strong> determinazione di metalli in tracce, idrocarburi, IPA, PCB, nutrienti e parametri granulometrici/chimico-fisici su fondali marini e fluviali.</li>
                 <li><strong>Indagini sul Biota:</strong> determinazione analitica dei livelli di bioaccumulo di microinquinanti organici e inorganici nei tessuti di organismi bioindicatori.</li>
-                <li><strong>Piani di monitoraggio ambientale:</strong> supporto analitico per infrastrutture marittime, opere costiere e tutela della biodiversità mediterranea.</li>
+                <li><strong>Piani di monitoraggio ambientale:</strong> supporto analitico per infrastrutture marittime, opere costiere e tutela della biodiversitÃ  mediterranea.</li>
               </ul>
               <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="requestServiceQuote('Ambiente, Sedimenti & Biota')">Richiedi monitoraggio ambientale</button>
             </div>
@@ -425,7 +425,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
 
         </div>
 
-        <!-- Box Qualità UNI CEI EN ISO/IEC 17025 (configurabile da Area Riservata) -->
+        <!-- Box QualitÃ  UNI CEI EN ISO/IEC 17025 (configurabile da Area Riservata) -->
         <?php if (!empty($acc['enabled'])): ?>
         <div class="pqa-quality-banner">
           <div class="pqa-quality-seal" aria-hidden="true">
@@ -439,7 +439,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               <span class="pqa-badge-lab"><?= pqa_e(trim((string) ($acc['body'] ?? '') . ' ' . (string) $acc['code'])) ?></span>
               <?php endif; ?>
             </div>
-            <h3 class="pqa-quality-title"><?= pqa_e((string) ($acc['title'] ?? 'Sistema di Gestione della Qualità')) ?></h3>
+            <h3 class="pqa-quality-title"><?= pqa_e((string) ($acc['title'] ?? 'Sistema di Gestione della QualitÃ ')) ?></h3>
             <p class="pqa-quality-desc"><?= pqa_e((string) ($acc['description'] ?? '')) ?></p>
           </div>
           <div>
@@ -461,7 +461,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
           <span class="pqa-eyebrow">Governance, Etica &amp; Trasparenza</span>
           <h2 class="pqa-h2">Organizzazione aziendale, Modello 231 e tutela delle segnalazioni</h2>
           <p class="pqa-lead">
-            Il <?= pqa_e($config['company_name']) ?> promuove una cultura aziendale fondata su legalità, trasparenza, indipendenza tecnica e responsabilità sociale, mettendo a disposizione di clienti, fornitori e stakeholder la documentazione ufficiale di governance.
+            Il <?= pqa_e($config['company_name']) ?> promuove una cultura aziendale fondata su legalitÃ , trasparenza, indipendenza tecnica e responsabilitÃ  sociale, mettendo a disposizione di clienti, fornitori e stakeholder la documentazione ufficiale di governance.
           </p>
         </div>
 
@@ -505,7 +505,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 <div class="pqa-doc-meta" style="margin-bottom: 16px;">
                   <span>
                     <strong>Revisione:</strong>
-                    <?= $doc['revision'] !== '' ? pqa_e((string) $doc['revision']) : '—' ?>
+                    <?= $doc['revision'] !== '' ? pqa_e((string) $doc['revision']) : 'â€”' ?>
                   </span>
                   <span>
                     <strong>Data approvazione:</strong>
@@ -513,7 +513,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                   </span>
                   <?php if ($ready): ?>
                     <span>
-                      <strong>Peso file:</strong> PDF • <?= pqa_e((string) $doc['size_human']) ?>
+                      <strong>Peso file:</strong> PDF â€¢ <?= pqa_e((string) $doc['size_human']) ?>
                     </span>
                   <?php endif; ?>
                 </div>
@@ -546,7 +546,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
             <div>
               <span class="pqa-wb-eyebrow">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                Canale Segnalazioni • D.Lgs. 24/2023
+                Canale Segnalazioni â€¢ D.Lgs. 24/2023
               </span>
               <h3 class="pqa-wb-title">Segnalazioni Whistleblowing e tutela della riservatezza</h3>
               <p class="pqa-wb-summary">
@@ -556,7 +556,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               <div class="pqa-wb-pillars">
                 <div class="pqa-wb-pillar">
                   <strong>Riservatezza Assoluta</strong>
-                  Tutela crittografica dell’identità del segnalante, dei facilitatori e della documentazione allegata.
+                  Tutela crittografica dellâ€™identitÃ  del segnalante, dei facilitatori e della documentazione allegata.
                 </div>
                 <div class="pqa-wb-pillar">
                   <strong>Divieto di Ritorsione</strong>
@@ -564,11 +564,11 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 </div>
                 <div class="pqa-wb-pillar">
                   <strong>Gestione Indipendente</strong>
-                  Presa in carico entro 7 giorni dall’invio e riscontro istruttorio entro 3 mesi dalla ricezione.
+                  Presa in carico entro 7 giorni dallâ€™invio e riscontro istruttorio entro 3 mesi dalla ricezione.
                 </div>
                 <div class="pqa-wb-pillar">
                   <strong>Ambito Oggettivo</strong>
-                  Violazioni del Modello 231, del Codice Etico o di normative nazionali e dell’Unione Europea.
+                  Violazioni del Modello 231, del Codice Etico o di normative nazionali e dellâ€™Unione Europea.
                 </div>
               </div>
 
@@ -599,7 +599,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                       <?= pqa_e((string) ($wb['pending_label'] ?? 'Canale in attivazione')) ?>
                     </strong>
-                    <p>Il collegamento diretto alla piattaforma crittografata per l’invio delle segnalazioni è in fase di configurazione tecnica e sarà reso operativo su questa sezione.</p>
+                    <p>Il collegamento diretto alla piattaforma crittografata per lâ€™invio delle segnalazioni Ã¨ in fase di configurazione tecnica e sarÃ  reso operativo su questa sezione.</p>
                   </div>
                 <?php endif; ?>
               </div>
@@ -611,8 +611,8 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 <?php if (!empty($wbDoc['is_available'])): ?>
                   <p class="pqa-wb-doc-meta">
                     <?= pqa_e((string) $wbDoc['revision']) ?>
-                    <?= $wbDoc['approved_date_human'] !== '' ? ' • ' . pqa_e((string) $wbDoc['approved_date_human']) : '' ?>
-                    • PDF (<?= pqa_e((string) $wbDoc['size_human']) ?>)
+                    <?= $wbDoc['approved_date_human'] !== '' ? ' â€¢ ' . pqa_e((string) $wbDoc['approved_date_human']) : '' ?>
+                    â€¢ PDF (<?= pqa_e((string) $wbDoc['size_human']) ?>)
                   </p>
                   <div style="display:flex; gap:10px; flex-wrap:wrap;">
                     <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-outline" style="background:transparent; color:#FFFFFF; border-color:rgba(255,255,255,0.32);" @click="openPdfPreview('procedura_whistleblowing')">
@@ -648,7 +648,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
         <div class="pqa-section-header">
           <span class="pqa-eyebrow">Sede &amp; Recapiti Ufficiali</span>
           <h2 class="pqa-h2">Contatta la segreteria e il laboratorio di Siracusa</h2>
-          <p class="pqa-lead">Siamo a disposizione per preventivi analitici, modalità di campionamento, ritiro contenitori sterili e consulenza normativa.</p>
+          <p class="pqa-lead">Siamo a disposizione per preventivi analitici, modalitÃ  di campionamento, ritiro contenitori sterili e consulenza normativa.</p>
         </div>
 
         <div class="pqa-contact-grid">
@@ -663,7 +663,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 </div>
                 <div>
                   <span class="pqa-contact-label">Sede Legale e Laboratorio</span>
-                  <div class="pqa-contact-val"><?= pqa_e($config['address_street']) ?> — <?= pqa_e($config['address_city']) ?></div>
+                  <div class="pqa-contact-val"><?= pqa_e($config['address_street']) ?> â€” <?= pqa_e($config['address_city']) ?></div>
                   <span class="pqa-contact-sub"><?= pqa_e($config['opening_hours']) ?></span>
                   <?php if (!empty($config['sample_hours'])): ?>
                   <span class="pqa-contact-sub"><?= pqa_e($config['sample_hours']) ?></span>
@@ -704,9 +704,9 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 <div class="pqa-map-pin" aria-hidden="true">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
-                <h3><?= pqa_e($config['address_street']) ?> — <?= pqa_e($config['address_city']) ?></h3>
+                <h3><?= pqa_e($config['address_street']) ?> â€” <?= pqa_e($config['address_city']) ?></h3>
                 <p>
-                  Per tutelare la tua privacy (GDPR) ed evitare l’installazione automatica di cookie di terze parti, la mappa interattiva viene caricata solo su tua richiesta.
+                  Per tutelare la tua privacy (GDPR) ed evitare lâ€™installazione automatica di cookie di terze parti, la mappa interattiva viene caricata solo su tua richiesta.
                 </p>
                 <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
                   <button type="button" class="pqa-btn pqa-btn-sm pqa-btn-primary" @click="unlockMap()">
@@ -722,7 +722,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 <div class="pqa-map-frame-wrap">
                   <iframe
                     :src="mapEmbedUrl"
-                    title="Mappa sede Centro Analisi P.Q.A. S.r.l. — Corso Gelone 82, Siracusa"
+                    title="Mappa sede Centro Analisi P.Q.A. S.r.l. â€” Corso Gelone 82, Siracusa"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
@@ -735,7 +735,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
           <!-- Colonna Form Richiesta Informazioni AJAX -->
           <div class="pqa-form-card">
             <h3 class="pqa-form-title">Richiedi informazioni o un preventivo</h3>
-            <p class="pqa-form-subtitle">Compila il modulo per essere ricontattato dai tecnici del laboratorio all’indirizzo <strong><?= pqa_e($config['email_info']) ?></strong>.</p>
+            <p class="pqa-form-subtitle">Compila il modulo per essere ricontattato dai tecnici del laboratorio allâ€™indirizzo <strong><?= pqa_e($config['email_info']) ?></strong>.</p>
 
             <div aria-live="polite">
               <div class="pqa-alert pqa-alert-success" x-show="formSuccess !== ''" x-cloak x-text="formSuccess"></div>
@@ -801,11 +801,11 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
               <div class="pqa-field">
                 <label class="pqa-label" for="contact-subject">Ambito della richiesta *</label>
                 <select id="contact-subject" class="pqa-select" x-model="form.subject">
-                  <option value="Qualità delle Acque & Ricerca Legionella">Qualità delle Acque &amp; Ricerca Legionella</option>
+                  <option value="QualitÃ  delle Acque & Ricerca Legionella">QualitÃ  delle Acque &amp; Ricerca Legionella</option>
                   <option value="Analisi Chimiche & Industriali">Analisi Chimiche &amp; Industriali</option>
-                  <option value="Analisi Merceologiche & Controllo Qualità">Analisi Merceologiche &amp; Controllo Qualità</option>
+                  <option value="Analisi Merceologiche & Controllo QualitÃ ">Analisi Merceologiche &amp; Controllo QualitÃ </option>
                   <option value="Ambiente, Sedimenti & Biota">Ambiente, Sedimenti &amp; Biota</option>
-                  <option value="Preventivo Generale / Campionamento">Preventivo Generale / Modalità di Campionamento</option>
+                  <option value="Preventivo Generale / Campionamento">Preventivo Generale / ModalitÃ  di Campionamento</option>
                 </select>
               </div>
 
@@ -827,7 +827,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
                 <label class="pqa-checkbox-label">
                   <input type="checkbox" x-model="form.privacy_consent" required>
                   <span>
-                    Dichiaro di aver letto l’<button type="button" class="pqa-link-btn" @click="openLegal('privacy')">Informativa Privacy (Art. 13 GDPR)</button> e acconsento al trattamento dei dati forniti esclusivamente per la gestione della presente richiesta. *
+                    Dichiaro di aver letto lâ€™<button type="button" class="pqa-link-btn" @click="openLegal('privacy')">Informativa Privacy (Art. 13 GDPR)</button> e acconsento al trattamento dei dati forniti esclusivamente per la gestione della presente richiesta. *
                   </span>
                 </label>
                 <span class="pqa-field-error" x-show="fieldErrors.privacy_consent" x-cloak x-text="fieldErrors.privacy_consent"></span>
@@ -885,9 +885,9 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
 
       <div class="pqa-footer-bottom">
         <div>
-          <strong><?= pqa_e($config['company_name']) ?></strong> — Sede Legale e Operativa: <?= pqa_e($config['address_street']) ?>, <?= pqa_e($config['address_city']) ?>
-          • P.IVA e C.F. <strong><?= pqa_e($config['vat_number']) ?></strong>
-          • PEC: <a href="mailto:<?= pqa_e($config['pec']) ?>" style="color:inherit; text-decoration:underline;"><?= pqa_e($config['pec']) ?></a>
+          <strong><?= pqa_e($config['company_name']) ?></strong> â€” Sede Legale e Operativa: <?= pqa_e($config['address_street']) ?>, <?= pqa_e($config['address_city']) ?>
+          â€¢ P.IVA e C.F. <strong><?= pqa_e($config['vat_number']) ?></strong>
+          â€¢ PEC: <a href="mailto:<?= pqa_e($config['pec']) ?>" style="color:inherit; text-decoration:underline;"><?= pqa_e($config['pec']) ?></a>
         </div>
         <div>
           <a href="admin.php" class="pqa-admin-discrete">Area Riservata</a>
@@ -913,7 +913,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
       <div class="pqa-modal-header">
         <div style="min-width:0;">
           <h3 class="pqa-modal-title" x-text="pdfModal.title">Documento</h3>
-          <span style="font-size:0.79rem; color:var(--pqa-muted);" x-text="pdfModal.revision + (pdfModal.size ? ' • PDF ' + pdfModal.size : '')"></span>
+          <span style="font-size:0.79rem; color:var(--pqa-muted);" x-text="pdfModal.revision + (pdfModal.size ? ' â€¢ PDF ' + pdfModal.size : '')"></span>
         </div>
         <div class="pqa-modal-actions">
           <a :href="pdfModal.viewUrl" target="_blank" rel="noopener" class="pqa-btn pqa-btn-sm pqa-btn-outline">Apri a schermo intero</a>
@@ -924,7 +924,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
         </div>
       </div>
       <div class="pqa-pdf-mobile-hint">
-        <span>Su smartphone il lettore integrato può mostrare solo la prima pagina:</span>
+        <span>Su smartphone il lettore integrato puÃ² mostrare solo la prima pagina:</span>
         <a :href="pdfModal.viewUrl" target="_blank" rel="noopener">apri il PDF nel visualizzatore nativo</a>.
       </div>
       <template x-if="pdfModal.open && pdfModal.viewUrl">
@@ -958,27 +958,27 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
       <div class="pqa-modal-body" x-show="legalModal === 'privacy'">
         <h4>1. Titolare del Trattamento</h4>
         <p>
-          Il Titolare del trattamento dei dati personali è <strong><?= pqa_e($config['company_name']) ?></strong>, con sede legale e operativa in <?= pqa_e($config['address_street']) ?>, <?= pqa_e($config['address_city']) ?>, P.IVA e C.F. <?= pqa_e($config['vat_number']) ?>, contattabile all’indirizzo email <a href="mailto:<?= pqa_e($config['email_info']) ?>"><?= pqa_e($config['email_info']) ?></a> o via PEC a <a href="mailto:<?= pqa_e($config['pec']) ?>"><?= pqa_e($config['pec']) ?></a>.
+          Il Titolare del trattamento dei dati personali Ã¨ <strong><?= pqa_e($config['company_name']) ?></strong>, con sede legale e operativa in <?= pqa_e($config['address_street']) ?>, <?= pqa_e($config['address_city']) ?>, P.IVA e C.F. <?= pqa_e($config['vat_number']) ?>, contattabile allâ€™indirizzo email <a href="mailto:<?= pqa_e($config['email_info']) ?>"><?= pqa_e($config['email_info']) ?></a> o via PEC a <a href="mailto:<?= pqa_e($config['pec']) ?>"><?= pqa_e($config['pec']) ?></a>.
         </p>
 
-        <h4>2. Tipologia di dati trattati e finalità</h4>
+        <h4>2. Tipologia di dati trattati e finalitÃ </h4>
         <p>
-          Attraverso il presente sito web vengono raccolti esclusivamente: (a) dati tecnici di navigazione strettamente necessari all’erogazione sicura del servizio; (b) dati identificativi e di contatto (nome, email, eventuale recapito telefonico e contenuto della richiesta) conferiti volontariamente dall’utente mediante il modulo di richiesta informazioni, trattati al solo fine di dare riscontro a richieste tecniche, preventivi o informazioni sui servizi di laboratorio.
+          Attraverso il presente sito web vengono raccolti esclusivamente: (a) dati tecnici di navigazione strettamente necessari allâ€™erogazione sicura del servizio; (b) dati identificativi e di contatto (nome, email, eventuale recapito telefonico e contenuto della richiesta) conferiti volontariamente dallâ€™utente mediante il modulo di richiesta informazioni, trattati al solo fine di dare riscontro a richieste tecniche, preventivi o informazioni sui servizi di laboratorio.
         </p>
 
         <h4>3. Base giuridica del trattamento</h4>
         <p>
-          Il trattamento si fonda sull’esecuzione di misure precontrattuali adottate su richiesta dell’interessato (art. 6, par. 1, lett. b del Regolamento UE 2016/679 — GDPR) e sul legittimo interesse del Titolare alla sicurezza informatica del sito (art. 6, par. 1, lett. f GDPR).
+          Il trattamento si fonda sullâ€™esecuzione di misure precontrattuali adottate su richiesta dellâ€™interessato (art. 6, par. 1, lett. b del Regolamento UE 2016/679 â€” GDPR) e sul legittimo interesse del Titolare alla sicurezza informatica del sito (art. 6, par. 1, lett. f GDPR).
         </p>
 
-        <h4>4. Modalità del trattamento e conservazione</h4>
+        <h4>4. ModalitÃ  del trattamento e conservazione</h4>
         <p>
-          I dati sono trattati da personale espressamente autorizzato mediante strumenti informatici protetti, senza alcun processo decisionale automatizzato né profilazione commerciale, e sono conservati per il tempo strettamente necessario a evadere la richiesta e adempiere ad eventuali obblighi di legge.
+          I dati sono trattati da personale espressamente autorizzato mediante strumenti informatici protetti, senza alcun processo decisionale automatizzato nÃ© profilazione commerciale, e sono conservati per il tempo strettamente necessario a evadere la richiesta e adempiere ad eventuali obblighi di legge.
         </p>
 
-        <h4>5. Diritti dell’Interessato</h4>
+        <h4>5. Diritti dellâ€™Interessato</h4>
         <p>
-          Ai sensi degli artt. 15–22 del GDPR, l’interessato può esercitare in qualsiasi momento i diritti di accesso, rettifica, cancellazione, limitazione o opposizione scrivendo a <a href="mailto:<?= pqa_e($config['email_info']) ?>"><?= pqa_e($config['email_info']) ?></a> o alla PEC societaria, fatto salvo il diritto di proporre reclamo all’Autorità Garante per la protezione dei dati personali.
+          Ai sensi degli artt. 15â€“22 del GDPR, lâ€™interessato puÃ² esercitare in qualsiasi momento i diritti di accesso, rettifica, cancellazione, limitazione o opposizione scrivendo a <a href="mailto:<?= pqa_e($config['email_info']) ?>"><?= pqa_e($config['email_info']) ?></a> o alla PEC societaria, fatto salvo il diritto di proporre reclamo allâ€™AutoritÃ  Garante per la protezione dei dati personali.
         </p>
       </div>
 
@@ -986,17 +986,17 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
       <div class="pqa-modal-body" x-show="legalModal === 'cookie'">
         <h4>Zero Cookie di Profilazione</h4>
         <p>
-          Il sito web di <strong><?= pqa_e($config['company_name']) ?></strong> è stato progettato secondo il principio <em>Privacy by Design</em>: tutti i caratteri tipografici, i fogli di stile e le librerie interattive sono ospitati localmente sul server del sito, senza connessioni automatiche verso CDN esterne o strumenti di tracciamento pubblicitario.
+          Il sito web di <strong><?= pqa_e($config['company_name']) ?></strong> Ã¨ stato progettato secondo il principio <em>Privacy by Design</em>: tutti i caratteri tipografici, i fogli di stile e le librerie interattive sono ospitati localmente sul server del sito, senza connessioni automatiche verso CDN esterne o strumenti di tracciamento pubblicitario.
         </p>
 
         <h4>Cookie Tecnici di Sessione</h4>
         <p>
-          Viene impiegato unicamente un cookie tecnico di sessione strettamente necessario (<code>pqa_sess</code>, <code>HttpOnly</code>) per la protezione anti-falsificazione (CSRF) del modulo contatti e dell’area riservata, esente da consenso preventivo ai sensi delle Linee Guida del Garante Privacy del 10 giugno 2021.
+          Viene impiegato unicamente un cookie tecnico di sessione strettamente necessario (<code>pqa_sess</code>, <code>HttpOnly</code>) per la protezione anti-falsificazione (CSRF) del modulo contatti e dellâ€™area riservata, esente da consenso preventivo ai sensi delle Linee Guida del Garante Privacy del 10 giugno 2021.
         </p>
 
         <h4>Mappa Interattiva con Sblocco Volontario (Click-to-Load)</h4>
         <p>
-          Nella sezione Contatti, la mappa geografica di terze parti è bloccata per impostazione predefinita e nessun dato viene trasmesso al fornitore cartografico finché l’utente non seleziona volontariamente il pulsante <em>“Attiva Mappa Interattiva”</em>.
+          Nella sezione Contatti, la mappa geografica di terze parti Ã¨ bloccata per impostazione predefinita e nessun dato viene trasmesso al fornitore cartografico finchÃ© lâ€™utente non seleziona volontariamente il pulsante <em>â€œAttiva Mappa Interattivaâ€</em>.
         </p>
       </div>
     </div>
