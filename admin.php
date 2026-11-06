@@ -594,7 +594,7 @@ $contactLogs = $isLogged ? pqa_read_json(PQA_STORAGE_DIR . '/contacts_log.json.p
         <a href="index.php">
           <img src="<?= pqa_e($config['branding']['logo_dark']) ?>" alt="<?= pqa_e($config['company_name']) ?>" style="height:44px; width:auto;">
         </a>
-        <span style="font-size:0.82rem; padding:4px 10px; border-radius:99px; background:rgba(56,189,248,0.16); color:#38BDF8; font-weight:700;">
+        <span style="font-size:0.82rem; padding:4px 10px; border-radius:99px; background:rgba(52,211,153,0.18); color:#34D399; font-weight:700;">
           Gestione Documentale &amp; Contenuti
         </span>
       </div>
@@ -944,7 +944,7 @@ $contactLogs = $isLogged ? pqa_read_json(PQA_STORAGE_DIR . '/contacts_log.json.p
 
             <!-- Variante Fondo Scuro -->
             <div style="border:1px solid var(--pqa-border); border-radius:var(--radius-md); overflow:hidden;">
-              <div style="background:#0B2545; height:120px; display:flex; align-items:center; justify-content:center; padding:16px;">
+              <div style="background:#172D21; height:120px; display:flex; align-items:center; justify-content:center; padding:16px;">
                 <img src="<?= pqa_e($config['branding']['logo_dark']) ?>" alt="Anteprima logo scuro" style="max-height:62px; width:auto;">
               </div>
               <form method="post" action="admin.php?tab=branding" enctype="multipart/form-data" style="padding:18px;">

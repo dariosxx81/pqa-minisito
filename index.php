@@ -61,7 +61,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
   <title><?= pqa_e($config['company_name']) ?> — Laboratorio Analisi Chimiche, Acque e Ambiente a Siracusa</title>
   <meta name="description" content="Centro Analisi P.Q.A. S.r.l. a Siracusa (Direzione Dott.ssa Maria Grazia Micieli): laboratorio di analisi chimiche, industriali, merceologiche, controllo acque, ricerca Legionella, sedimenti e biota.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0B2545">
+  <meta name="theme-color" content="#172D21">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
@@ -131,7 +131,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
   <header class="pqa-header" :class="{ 'is-scrolled': scrolled }">
     <div class="pqa-container pqa-header-inner">
       <a href="#intro" class="pqa-brand-link" aria-label="<?= pqa_e($config['company_name']) ?> — Torna all'inizio">
-        <img src="<?= pqa_e($config['branding']['logo_light']) ?>" alt="<?= pqa_e($config['company_name']) ?>" class="pqa-logo-img" width="200" height="54">
+        <img src="<?= pqa_e($config['branding']['logo_light']) ?>" alt="<?= pqa_e($config['company_name']) ?>" class="pqa-logo-img" width="178" height="58">
       </a>
 
       <nav class="pqa-nav" aria-label="Navigazione principale">
@@ -853,7 +853,7 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
     <div class="pqa-container">
       <div class="pqa-footer-grid">
         <div>
-          <img src="<?= pqa_e($config['branding']['logo_dark']) ?>" alt="<?= pqa_e($config['company_name']) ?>" class="pqa-footer-logo" width="190" height="52">
+          <img src="<?= pqa_e($config['branding']['logo_dark']) ?>" alt="<?= pqa_e($config['company_name']) ?>" class="pqa-footer-logo" width="172" height="56">
           <p style="margin:0 0 12px; max-width:420px;">
             Laboratorio di analisi chimiche, industriali e merceologiche, controllo acque potabili e di piscina, ricerca <em>Legionella</em>, monitoraggio sedimenti e biota.
           </p>
