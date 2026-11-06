@@ -69,7 +69,11 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
   <meta property="og:description" content="Analisi chimiche, industriali e merceologiche, test di qualitÃ  delle acque e ricerca Legionella, monitoraggio sedimenti e biota. Sede in Corso Gelone 82, Siracusa.">
   <meta property="og:image" content="assets/img/hero-water.jpg">
 
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=3">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png?v=3">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png?v=3">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg?v=3">
   <link rel="preload" href="assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Literata-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/fonts.css">
@@ -1004,3 +1008,4 @@ $wbDoc = $documents['procedura_whistleblowing'] ?? null;
 
 </body>
 </html>
+
